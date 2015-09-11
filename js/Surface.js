@@ -192,7 +192,7 @@ AEROTWIST.Surface = new function()
 	 */
 	function createObjects()
 	{
-		var planeMaterial 		= new THREE.MeshLambertMaterial({color: 0xFFFFFF, map: ImageUtils.loadTexture("images/72lions_sterik.jpg"), shading: THREE.SmoothShading}),
+		var planeMaterial 		= new THREE.MeshLambertMaterial({color: 0xFFFFFF, map: ImageUtils.loadTexture("https://cdn.rawgit.com/paullewis/Surface/master/images/72lions_sterik.jpg"), shading: THREE.SmoothShading}),
 			planeMaterialWire 	= new THREE.MeshLambertMaterial({color: 0xFFFFFF, wireframe:true});
 		
 		surface 				= new THREE.Mesh(new Plane(SURFACE_WIDTH, SURFACE_HEIGHT, X_RESOLUTION, Y_RESOLUTION), [planeMaterial, planeMaterialWire]);
